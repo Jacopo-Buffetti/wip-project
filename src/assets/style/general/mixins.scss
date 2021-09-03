@@ -1,0 +1,7 @@
+$timeline-before-bg : #222a42;
+
+@mixin box-shadow-card($horizontal:5px, $vertical:5px, $blur:15PX, $spread:0, $color:rgba($yellow,0.3)) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+    box-shadow: $horizontal $vertical $blur $spread $color;
+}

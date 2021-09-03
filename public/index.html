@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <link rel="icon" sizes="192x192" href="./favicon.ico">
+
+  </head>
+  <body class="txlive">
+  <div class="main">
+    <h1>Star Wars Planets</h1>
+    <div class="container-search">
+      <div class="input-search">
+        <div class="container-input-button">
+          <div class="container-input-search">
+            <div>
+              <label class="search-planet" for="planet-search">
+                Search planet
+              </label>
+              <input type="text" id="planet-search" class="input" placeholder="Search" />
+            </div>
+            <button type="button" class="search-planet-button button" onClick="filterDataName()">
+              <img src="./images/r2d2.png" alt="R2D2" />
+            </button>
+          </div>
+          <button type="button" class="show-filters button" onClick="showFilters()">
+            Show filters
+          </button>
+        </div>
+        <div class="container-filters" id="filters">
+          <div class="container-date">
+            <div class="date-start">
+              <label for="start-date">Start date:</label>
+              <input type="datetime-local" id="start-date" class="input" name="trip-start" value="2014-12-20T20:18" min="2014-12-08T13:50" max="2014-12-21T20:18" />
+            </div>
+              <div class="date-end">
+              <label for="end-date">End date:</label>
+              <input type="datetime-local" id="end-date" class="input" name="trip-end" value="2014-12-09T13:50" min="2014-12-08T13:50" max="2014-12-21T20:18" />
+              </div>
+          </div>
+          <div class="container-buttons-filter">
+            <button type="button" class="button search-date" onClick="filterDataDate()">
+              search for date
+            </button>
+            <button type="button" class="button order-creation" onClick="sortDataDate(this)">
+              sort by creation date
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container-timeline">
+      <div id="timeline">
+      </div>
+    </div>
+    <div id="root"></div>
+  </div>
+  </body>
+</html>
+2014-12-09T13:50:49.641000Z
+2014-12-09T13:50:49.641000Z
